@@ -79,14 +79,10 @@ function buscar(busquedaid)
 {
 for(let i=0;i<this.inventario.length;i++)
 {
-    if(this.inventario[i].id===busquedaid)
+    if(this.inventario[i].id==busquedaid)
     {
         return document.getElementById("busID").innerHTML= "--> ID: " + this.inventario[i].id +        "  --> Nombre: " + this.inventario[i].nombre +        "  --> Cantidad: " + this.inventario[i].cantidad +        "  --> Precio: " + this.inventario[i].precio;
 
-    }
-    else
-    {
-        return document.getElementById("busID").innerHTML ="No se encontro ID";
     }
     
 }
